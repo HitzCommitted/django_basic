@@ -21,6 +21,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th scope="col">#</th>
                     <th scope="col">Full Name</th>
                     <th scope="col">Designation</th>
                     <th scope="col">Email</th>
@@ -31,6 +32,7 @@
             <tbody>
                 {% for employee in employees %}
                 <tr>
+                    <td>{{ forloop.counter }}</td>    
                     <td>{{ employee.first_name }} {{ employee.last_name }}</td>
                     <td>{{ employee.designation }}</td>
                     <td>{{ employee.email_address }}</td>
